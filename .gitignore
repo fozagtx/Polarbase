@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+/coverage
+/.nyc_output
+/.next
+/.turbo
+/build
+/dist
+
+# Local
+.env
+.env*.local
+*.log
+.DS_Store
