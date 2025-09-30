@@ -1,1 +1,0 @@
-export { AddProductForm } from "./AddProductForm";

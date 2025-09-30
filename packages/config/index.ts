@@ -1,10 +1,9 @@
-import mainnetConfig from "./mainnet";
 import localConfig from "./local";
 import testnetConfig from "./testnet";
+import mainnetConfig from "./mainnet";
 import { EnvConfig, getContractsConfig } from "./contracts";
-import { AppConfigAppConfig } from "../typestypes";
+import { AppConfig } from "./types";
 
-// Re-export the AppConfig type for consumers
 export type { AppConfig };
 
 /**

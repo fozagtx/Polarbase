@@ -1,1 +1,0 @@
-export { ProductDisplay } from "./ProductDisplay";

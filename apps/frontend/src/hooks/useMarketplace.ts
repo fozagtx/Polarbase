@@ -1,10 +1,12 @@
-import { DigitalProductStoreContractJson } from "@repo/contracts";
+"use client";
+
 import { Interface } from "ethers";
 import { getConfig } from "@repo/config";
-import { useCall } from "../utils/hooks/useCall";
-import { useSendTransaction } from "../utils/hooks/useSendTransaction";
+import { useCall } from "../lib/hooks/useCall";
+import { useSendTransaction } from "../lib/hooks/useSendTransaction";
+import DigitalProductStoreContractJson from "@repo/contracts/artifacts/contracts/DigitalProductStore.sol/DigitalProductStore.json";
 
-const config = getConfig();
+const config = getConfig(process.env.NEXT_PUBLIC_VITE_APP_ENV as any);
 
 export const useMarketplace = () => {
   const contractAddress = config.marketplaceContractAddress;
