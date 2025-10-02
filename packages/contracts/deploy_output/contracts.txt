@@ -1,3 +1,0 @@
-{
-  "marketplace": "0xaA302b8DDEd08CD0B97e785F0c2de35034de2040"
-}
