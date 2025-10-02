@@ -1,7 +1,5 @@
 import type { Config } from "tailwindcss";
-
-import type { Config } from "tailwindcss";
-
+s;
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",

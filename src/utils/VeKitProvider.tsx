@@ -1,5 +1,6 @@
-"use client";
 import { VeChainKitProvider } from "@vechain/vechain-kit";
+import React from "react";
+
 export function VeChainKitProviderWrapper({
   children,
 }: {
@@ -8,7 +9,7 @@ export function VeChainKitProviderWrapper({
   return (
     <VeChainKitProvider
       feeDelegation={{
-        delegatorUrl: "https://sponsor.testnet.vechain.energy", // set to false if you want to delegate ONLY social login transactions // social login transactions sponsorship is currently mandatory
+        delegatorUrl: "https://sponsor.testnet.vechain.energy",
         delegateAllTransactions: false,
       }}
       loginMethods={[
@@ -34,8 +35,7 @@ export function VeChainKitProviderWrapper({
         type: "test",
       }}
     >
-           {children}
-         
+      {children}
     </VeChainKitProvider>
   );
 }
